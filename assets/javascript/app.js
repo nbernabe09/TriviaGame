@@ -3,9 +3,9 @@ $(document).ready(function() {
 	// Variables
 	var questions = [
 		"What year did Fantasmic! open?",
-		"Which was the last attraction whose construction was overseen by Walt Disney?"
-	];
-	var answers = ["",""]
+		"Which was the last attraction whose construction was overseen by Walt Disney?",
+		"What attraction was NOT available on opening day?"];
+	var answers = ["","",""]
 	answers[0] = [
 		"1990",
 		"1991",
@@ -16,6 +16,11 @@ $(document).ready(function() {
 		"it's a small world",
 		"Pirates of the Caribbean",
 		"Haunted Mansion"];
+	answers[2] = [
+	"Autopia",
+	"Casey Jr. Circus Train",
+	"Jungle Cruise",
+	"Peter Pan's Flight"];
 	var time, ask, countdown, right, wrong, tooLong;
 	var clockRunning = false;
 
@@ -120,7 +125,7 @@ $(document).ready(function() {
 		}
 	});
 	$("body").on("click", "#answer1", function() {
-		if (ask === -1) {
+		if (ask === 2) {
 			stopTime();
 			rightPick();
 		} else {
