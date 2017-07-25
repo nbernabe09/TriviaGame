@@ -53,7 +53,7 @@ $(document).ready(function() {
 		right = 0;
 		wrong = 0;
 		tooLong = 0;
-		ask = 7;
+		ask = 0;
 		newQuestion(ask);
 	}
 	function newQuestion(x) {
