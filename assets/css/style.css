@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Waltograph";
+	src: url(../images/waltographUI.ttf) format("truetype");
+}
+
 body {
 	text-align: center;
 }
@@ -9,4 +14,8 @@ body {
 
 .game {
 	font-size: 20px;
+}
+
+.jumbotron {
+	font-family: "Waltograph", Verdana, Tahoma;
 }
